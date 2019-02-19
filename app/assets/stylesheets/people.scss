@@ -1,3 +1,52 @@
 // Place all the styles related to the people controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+
+#title {
+  display: flex;
+  justify-content: center;
+  font-family: helvetica;
+}
+h2 {
+  font-size: 28px;
+  font-family: helvetica;
+}
+#options-bar {
+  display: block;
+  color: black;
+  text-align: start;
+  padding: 14px;
+  padding-top: 1px;
+  text-decoration: none;
+  color: white;
+  list-style-type: none;
+  font-size: 12px;
+  font-family: helvetica;
+  border-right: 1px solid #bbb;
+
+  }
+
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+  }
+  li {
+  float: left;
+  }
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px;
+    padding-top: 1px;
+    text-decoration: none;
+    color: white;
+    list-style-type: none;
+    font-size: 20px;
+    font-family: helvetica;
+    border-right: 1px solid #bbb;
+  }

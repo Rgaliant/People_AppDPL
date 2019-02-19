@@ -1,13 +1,15 @@
+
+<link rel="stylesheet" type="text/css" href="people.scss">
 <h1 id="title"> People </h1>
-<div id="p-container">
 <% @people.each do |person| %>
   <h2><%= person.name %></h2>
-  <%= link_to 'Show Person', person_path(person) %>
- <p> <%= link_to 'New Person', new_person_path %></p>
- <%= link_to "Edit Person", edit_person_path(person) %>
- <%= link_to "Delete Person", person, method: :delete %>
+  <div id="options-bar">
+  <%= link_to 'Show ', person_path(person) %>
+  <%= link_to 'New ', new_person_path %>
+ <%= link_to "Edit ", edit_person_path(person) %>
+ <%= link_to "Delete ", person, method: :delete %>
+ </div>
 <% end %>
-</div>
 
 
 
@@ -15,24 +17,3 @@
 
 
 
-
-
-<style>
-#title {
-  display: flex;
-  justify-content: center;
-  font-family: helvetica;
-}
-#p-container {
-  display: flex;
-  flex-direction: column;
-  width: 200px;
-  height: 200px;
-  justify-content: center;
-  font-family: helvetica;
-}
-h2 {
-  font-size: 28px;
-}
-
-</style>
