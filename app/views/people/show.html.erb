@@ -1,0 +1,21 @@
+<div id="profile-page">
+<h1>Name: <%= @people.name %></h1>
+<h4>Age: <%= @people.age %></h1>
+<p>Eye Color: <%= @people.eye_color %></p>
+<p>Hair Color: <%= @people.hair_color %></p>
+<p>Gender: <%= @people.gender %></p>
+<p>Living: <%= @people.alive %></p>
+</div>
+<%= link_to 'Back', people_path %>
+
+
+
+<style>
+#profile-page {
+  display: flex;
+  flex-direction: column;
+  font-family: helvetica;
+  font-size: 24px;
+}
+
+</style>

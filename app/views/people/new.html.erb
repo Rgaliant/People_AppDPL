@@ -1,0 +1,34 @@
+<h1>New Person</h1>
+<div id="new-form">
+<%= form_for @people do |f| %>
+  <%= f.label :name %>
+  <%= f.text_field :name %>
+ <br />
+  <%= f.label :age %>
+  <%= f.text_field :age %>
+<br />
+  <%= f.label :hair_color %>
+  <%= f.text_area :hair_color %>
+  <br />
+  <%= f.label :eye_color %>
+  <%= f.text_area :eye_color %>
+<br />
+  <%= f.label :gender %>
+  <%= f.text_area :gender %>
+  <br />
+  <%= f.label :alive %>
+  <%= f.text_area :alive %>
+<br />
+  <%= f.submit %>
+<% end %>
+</div>
+
+<style>
+#new-form {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  width: 500px;
+  
+}
+</style>
